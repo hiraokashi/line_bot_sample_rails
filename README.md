@@ -22,19 +22,20 @@ dockerは以下のバージョンで動作することを確認しています
  * [Install On Mac](https://docs.docker.com/docker-for-mac/ )
  * [Install On Windows](https://docs.docker.com/docker-for-windows/ )
  * [Install On Linux](https://docs.docker.com/engine/installation/linux/)
- 
-## Folk this Project
- まずはこのプロジェクトをフォークしてください。
- 
-## Clone As your project
- フォークしたプロジェクトをあなたの環境にcloneしてください
- 
-##　Bundle install and npm install
 
+## 設定手順
+
+### Folk this Project
+ * まずはこのプロジェクトをフォークしてください。
+ 
+### Clone As your project
+ * フォークしたプロジェクトをあなたの環境にcloneしてください 
+ 
+###　Bundle install and npm install
 ```shell
  docker-compose run --rm web bundle install
  docker-compose run --rm web npm install
- ```
+```
  
 ## Build Container
  ```shell
@@ -42,14 +43,15 @@ dockerは以下のバージョンで動作することを確認しています
  ```
  
 ## Database Initialization
-  ```shell
+
+```shell
  docker-compose run --rm web rails db:create
  docker-compose run --rm web rails db:migrate
- `` 
+``` 
 
 ## Run Container
 
 ```shell
  docker-compose up
- ```
+```
  
