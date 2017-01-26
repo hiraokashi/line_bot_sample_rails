@@ -10,7 +10,8 @@ dockerは以下のバージョンで動作することを確認しています
  docker-machine version 0.9.0, build 15fd4c7
  ```
  
- ## Application Version
+## Application Version
+
  * Ruby 2.3.1
  * Ruby On Rails 5.0.0
  * Nodejs v7.2.0
