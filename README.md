@@ -25,31 +25,31 @@ dockerは以下のバージョンで動作することを確認しています
 
 ## 設定手順
 
-### Folk this Project
+### 1.Folk this Project
  * まずはこのプロジェクトをフォークしてください。
  
-### Clone As your project
- * フォークしたプロジェクトをあなたの環境にcloneしてください 
+### 2.Clone As your project
+ * フォークしたプロジェクトをあなたの環境にcloneしてくだ
  
-###　Bundle install and npm install
+### 3.Bundle install and npm install
 ```shell
  docker-compose run --rm web bundle install
  docker-compose run --rm web npm install
 ```
  
-## Build Container
+### 4.Build Container
  ```shell
  docker-compose build
  ```
  
-## Database Initialization
+### 5.Database Initialization
 
 ```shell
  docker-compose run --rm web rails db:create
  docker-compose run --rm web rails db:migrate
 ``` 
 
-## Run Container
+### 6.Run Container
 
 ```shell
  docker-compose up
