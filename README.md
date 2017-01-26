@@ -29,7 +29,7 @@ dockerは以下のバージョンで動作することを確認しています
 ## Clone As your project
  フォークしたプロジェクトをあなたの環境にcloneしてください
  
-##　bundle install and npm install
+##　Bundle install and npm install
 
 ```shell
  docker-compose run --rm web bundle install
