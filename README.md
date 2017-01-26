@@ -16,37 +16,39 @@ dockerは以下のバージョンで動作することを確認しています
  * Nodejs v7.2.0
  * npm 3.10.9
  
- ## Docker Installation
+## Docker Installation
  お持ちのPCに合ったものインストールしてください
  * [Install On Mac](https://docs.docker.com/docker-for-mac/ )
  * [Install On Windows](https://docs.docker.com/docker-for-windows/ )
  * [Install On Linux](https://docs.docker.com/engine/installation/linux/)
  
- ## Folk this Project
+## Folk this Project
  まずはこのプロジェクトをフォークしてください。
  
- ## Clone As your project
+## Clone As your project
  フォークしたプロジェクトをあなたの環境にcloneしてください
  
- ##　bundle install and npm install
- ```shell
+##　bundle install and npm install
+
+```shell
  docker-compose run --rm web bundle install
  docker-compose run --rm web npm install
  ```
  
-  ## Build Container
+## Build Container
  ```shell
  docker-compose build
  ```
  
- ## Database Initialization
+## Database Initialization
   ```shell
  docker-compose run --rm web rails db:create
  docker-compose run --rm web rails db:migrate
  `` 
 
- ## Run Container
- ```shell
+## Run Container
+
+```shell
  docker-compose up
  ```
  
