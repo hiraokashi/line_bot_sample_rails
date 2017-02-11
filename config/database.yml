@@ -83,8 +83,15 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-  <<: *default
-  database: project_template_rails_npm_production
-  username: project_template_rails_npm
-  password: <%= ENV['PROJECT_TEMPLATE_RAILS_NPM_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+  host: ec2-23-23-212-121.compute-1.amazonaws.com
+  database: dap9k5a18oop3n
+  username: oibpebwjcygwtx
+  #password: <%= ENV['COLLABOSTARTER_DATABASE_PASSWORD'] %>
+  password: 3a63319d52d8c57da8e546dda58d907f2faf6696f859d5fe9d877555141b160b
+  port: 5432
 
