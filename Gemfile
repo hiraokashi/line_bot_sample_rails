@@ -32,6 +32,9 @@ gem 'sprockets-es6'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'active_hash'
+gem 'meta-tags'
+gem 'config'
+gem 'qiita-markdown'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
@@ -49,7 +52,37 @@ group :development do
   gem 'letter_opener_web'
 end
 
+group :development, :test do
+  gem 'pry-rails'
+  gem 'pry-doc'
+  gem 'pry-stack_explorer'
+  gem 'pry-byebug'
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'hirb'
+  gem 'hirb-unicode'
+  gem 'awesome_print'
+  gem 'xray-rails'
+  gem 'rack-mini-profiler'
+
+  gem 'rubocop', require: false
+
+  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  # gem 'spring'
+  gem 'rspec-rails'
+  gem 'capybara'
+  gem 'rails-erd'
+end
+
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'tzinfo'
 gem 'sorcery'
+gem 'ransack'
+gem 'paperclip','4.3.6'
+
+gem 'aws-sdk', '1.66.0'
+gem 'aws-s3', require: 'aws/s3'
+gem 'asset_sync'
+gem "fog"
+#gem 'ransack', github: 'activerecord-hackery/ransack'
