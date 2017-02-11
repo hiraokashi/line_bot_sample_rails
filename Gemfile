@@ -83,6 +83,6 @@ gem 'paperclip','4.3.6'
 
 gem 'aws-sdk', '1.66.0'
 gem 'aws-s3', require: 'aws/s3'
-gem 'asset_sync'
-gem "fog"
+#gem 'asset_sync'
+#gem "fog"
 #gem 'ransack', github: 'activerecord-hackery/ransack'
